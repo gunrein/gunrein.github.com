@@ -32,9 +32,10 @@
     <div>
       <h3 id="overview">Overview</h3>
       <p>
-        A user-centric software engineering and product leader, advisor, and investor who loves to help people, talk with users, design solutions, and program.
-        I can lead, manage, and directly do the hands-on work for design, implementation, deployment, customer discovery, and business+product strategy. I'm particularly interested in
-        observability, monitoring, measurement, resilience, continuous learning, fast cycle times, methodology, simplicity, and great user+developer experiences.
+        A user-centric software engineering and product leader, advisor, and investor who loves to build software, help people, talk with users,
+        design solutions. I can lead, manage, and directly do the hands-on work for design, implementation, deployment, customer discovery, and
+        business+product strategy. I'm particularly interested in observability, monitoring, measurement, resilience, continuous learning, fast
+        cycle times, methodology, simplicity, and great user+developer experiences.
       </p>
       <p>
         As a hobby I work on forest and riparian conservation with my family as part of Buncombe Hollow Forest and similar volunteer activities.
@@ -58,11 +59,72 @@
       <div>
         <table>
           <tbody>
+            <tr id="reclaim">
+              <td>Octoboer 2023 - present</td>
+              <td>
+                <p>
+                  <strong>Architect - Reclaim.ai</strong> (intelligent calendar automation for busy professionals)
+                  <br>
+                  <a href="https://reclaim.ai/">https://reclaim.ai/</a>
+                  <br>
+                  At Reclaim I primarily help with engineering but do some product design for the projects I’m involved in.
+                  The work ranges from building new features to prototyping to supporting customers. So far I’ve made
+                  improvements to the core prioritization and scheduling algorithms, introduced the use of partition tables
+                  in PostgreSQL, explored the use of LLMs for specific use cases, and helped complete several projects as a
+                  leader and programmer, mostly in Java with a little TypeScript.
+                </p>
+                <p><!-- hack in a little vertical padding into entries without lists --></p>
+              </td>
+            </tr>
 
-            <tr id="current">
-              <td>2023 - present</td>
-              <td><p>Currently exploring new opportunities.</p>
-                  <p><!-- hack in a little vertical padding into entries without lists --></p>
+            <tr id="observability">
+              <td>March 2023 - October 2023</td>
+              <td><p>Explored observability ideas</p>
+                <p>
+                I left Hasura to explore several product ideas for observability solutions. The premises of the explorations were:
+                </p>
+                <ul>
+                  <li>
+                    OpenTelemetry has reached a point of maturity that it should be central in most organizations observability strategies
+                  </li>
+                  <li>
+                    Developer attention is valuable and limited so provide a UX that is portable across backends (I believe this is possible given OpenTelemetry as a basis)
+                  </li>
+                  <li>
+                    Open source ingest, query, and storage solutions have reached a point that organizations producing significant telemetry can achieve better outcomes (developer experience, flexibility, performance, cost) than with incumbent vendors
+                  </li>
+                  <li>
+                    There is general dissatisfaction with the fragmented landscape of tools
+                  </li>
+                  <li>
+                    The prices for observability tools are too high
+                  </li>
+                </ul>
+
+                <p>
+                  I built several prototypes and talked with many people about their needs as users and buyers of observability solutions.
+                  Ultimately I didn’t find a wedge into the market that I liked for a startup. The prototypes and ideas focused in these areas:
+                </p>
+                <ul>
+                  <li>
+                    Widely distributed storage of telemetry while maintaining great query ergonomics (rather than shipping it to a central location) (not open source)
+                  </li>
+                  <li>
+                    UI that fully embraces OpenTelemetry semantics and blends the telemetry types in useful ways (not open source)
+                  </li>
+                  <li>
+                    Yet another dashboard system, but intended to be portable for developers and vendor-neutral. A few more details are available at
+                    <a href="https://github.com/gunrein/westdash">https://github.com/gunrein/westdash</a>.
+                  </li>
+                </ul>
+
+                <p>
+                  During this time I also built and published <a href="https://www.wallowa.io/">Wallowa</a> as a side project using DuckDB, Rust, TypeScript.
+                  Source code is available at <a href="https://github.com/gunrein/wallowa">https://github.com/gunrein/wallowa</a>.
+                </p>
+                <p>
+                  I continue to build observability tools on the side.
+                </p>
               </td>
             </tr>
 
@@ -82,27 +144,21 @@
               <td>2021 - 2023</td>
               <td>
                 <p>
-                  <strong>CTO - Hasura</strong>
+                  <strong>CTO - Hasura</strong> (open source-core startup focused on automatically creating APIs from data)
                   <br>
                   <a href="https://www.hasura.io/">https://www.hasura.io/</a>
                   <br>
-                  At Hasura I helped clarify the product and technical strategies while I grew and matured engineering,
-                  product management, and product design.
+                  At Hasura I helped clarify the product and technical strategies while I led the growth and maturation of engineering, product management, and product design.
                 </p>
                 <p>
                 <ul>
-                  <li>Hired strong leaders for engineering and product management; invested in developer experience,
-                    product quality, faster lead time and release cadence (from twice per year to every two weeks),
-                    architecture improvements, documentation team, and product analytics</li>
-                  <li>Reorganized Engineering, PM, and Design to increase connection to users, increase team
-                    satisfaction, reduce context switching, increase focus, increase ownership, and reduce lead time
-                  </li>
-                  <li>Made architectural improvements in all areas of the product and services</li>
-                  <li>Collaborated with the executive team on business strategy, product strategy, pricing, and
-                    packaging; increased transparency through weekly, monthly, and quarterly updates</li>
-                  <li>Improved processes, tools, and documentation to foster a psychologically safe learning environment
-                    that captured knowledge regularly; DORA metrics, incident response, first formal reviews, structure
-                    and checklists for improvements, releases, and launches</li>
+                  <li>Made architectural improvements in all areas of the product and services in support of improving end-user developer experience</li>
+                  <li>Push the transition to expand past the original codebase implemented in Haskell to take advantage of Rust (runtime performance) and Java (library ecosystem for database drivers)</li>
+                  <li>Hired strong leaders for engineering and product management; invested in developer experience, product quality, faster lead time and release cadence (from twice per year to every two weeks), architecture improvements, documentation team, and product analytics</li>
+                  <li>Reorganized Engineering, PM, and Design to increase connection to users, increase team satisfaction, reduce context switching, increase focus, increase ownership, and reduce lead time</li>
+                  <li>Collaborated with the executive team on business strategy, product strategy, pricing, and packaging; increased transparency through weekly, monthly, and quarterly updates</li>
+                  <li>Improved processes, tools, and documentation to foster a psychologically safe learning environment that captured knowledge regularly; DORA metrics, incident response, first formal reviews, structure and checklists for improvements, releases, and launches</li>
+                  <li>Prototyped syntax for new way to express models and relationships</li>
                 </ul>
                 </p>
               </td>
@@ -126,7 +182,7 @@
               <td>2013 - 2020</td>
               <td>
                 <p>
-                  <strong>Group VP of Engineering, Group VP of Product - New Relic</strong>
+                  <strong>Group VP of Engineering, Group VP of Product - New Relic</strong> (monitoring and observability solution)
                   <br>
                   <a href="https://www.newrelic.com/">https://www.newrelic.com/</a>
                   <br>
@@ -151,7 +207,7 @@
               <td>2011 - 2013</td>
               <td>
                 <p>
-                  <strong>Director of Product - Cedexis</strong>
+                  <strong>Director of Product - Cedexis</strong> (DNS-based adaptive global load balancer using RUM for intelligence)
                   <br>
                   <a href="https://www.cedexis.com/">https://www.cedexis.com/</a>
                   <br>
@@ -173,7 +229,7 @@
               <td>2011 - 2011</td>
               <td>
                 <p>
-                  <strong>Product Manager - Jama Software</strong>
+                  <strong>Product Manager - Jama Software</strong> (requirements management for complex products and projects)
                   <br>
                   <a href="https://www.jamasoftware.com/">https://www.jamasoftware.com/</a>
                   <br>
